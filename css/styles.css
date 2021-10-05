@@ -1,0 +1,109 @@
+/*
+blue #2196F3 
+primary-background #FFFFFF
+primary-text #212121
+secondary-text #757575
+footer-background #2F303A
+adress-color #FFFFFF 60 %
+secondary-background #F5F4FA
+*/
+
+:root {
+  --accent: #2196f3;
+  --primary-background-color: #ffffff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --footer-background-color: #2f303a;
+  --address-color: rgba(255, 255, 255, 60%);
+  --secondary-background-color: #f5f4fa;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--accent);
+}
+
+/*navigation*/
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+/*contacts*/
+.contacts .link {
+  color: var(--secondary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent);
+}
+
+/*top section and footer*/
+.head,
+.bottem {
+  background-color: var(--footer-background-color);
+}
+
+.head-title {
+  color: #ffffff;
+}
+
+.head-button {
+  background: var(--accent);
+  color: #fffffff;
+}
+
+/*main contant*/
+
+.features-title,
+.work-title,
+.team-title,
+.team-title-name {
+  color: var(--primary-text-color);
+}
+
+li > p {
+  color: var(--secondary-text-color);
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+/*footer*/
+
+.list-title {
+  color: #ffffff;
+}
+.list-contacts {
+  color: rgba(255, 255, 255, 60%);
+}
+
+.studio {
+  color: #ffffff;
+}
+
+/*Portfolio buttons*/
+
+.buttons {
+  background-color: var(--secondary-background-color);
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--accent);
+  color: #ffffff;
+}

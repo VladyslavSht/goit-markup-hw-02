@@ -12,6 +12,7 @@ secondary-background #F5F4FA
   --accent: #2196f3;
   --primary-background-color: #ffffff;
   --primary-text-color: #212121;
+  --second-primary-text-color: #ffffff;
   --secondary-text-color: #757575;
   --footer-background-color: #2f303a;
   --address-color: rgba(255, 255, 255, 60%);
@@ -19,7 +20,7 @@ secondary-background #F5F4FA
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -51,7 +52,7 @@ body {
 }
 
 .bottem-studio {
-  color: #ffffff;
+  color: var(--second-primary-text-color);
 
   font-family: Raleway;
   font-weight: 700;
@@ -75,7 +76,15 @@ body {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.list-contacts .link:hover,
+.list-contacts .link:focus {
+  color: var(--accent);
+}
+
+.current.link {
   color: var(--accent);
 }
 
@@ -89,11 +98,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent);
-}
-
 /*top section and footer*/
 .head,
 .bottem {
@@ -101,7 +105,7 @@ body {
 }
 
 .head-title {
-  color: #ffffff;
+  color: var(--second-primary-text-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -113,8 +117,9 @@ body {
 
 .head-button {
   background: var(--accent);
-  color: #fffffff;
+  color: var(--second-primary-text-color);
 
+  font-family: inherit;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -122,6 +127,9 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  border-style: none;
 }
 
 /*main contant*/
@@ -140,7 +148,7 @@ body {
   text-transform: uppercase;
 }
 
-li > p {
+.features-title-text {
   color: var(--secondary-text-color);
 
   font-size: 14px;
@@ -171,7 +179,7 @@ li > p {
 /*footer*/
 
 .list-title {
-  color: #ffffff;
+  color: var(--second-primary-text-color);
 
   font-style: normal;
   font-size: 14px;
@@ -185,26 +193,30 @@ li > p {
   line-height: 1.71;
 }
 
-.list-contacts .link:hover,
-.list-contacts .link:focus {
-  color: var(--accent);
-}
-
 /*Portfolio buttons*/
 
 .buttons {
   background-color: var(--secondary-background-color);
 
+  font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
+  border-radius: 4px;
+  border-style: none;
 }
 
 .buttons:hover,
 .buttons:focus {
   background-color: var(--accent);
-  color: #ffffff;
+  color: var(--second-primary-text-color);
+}
+
+.buttons.active {
+  background-color: var(--accent);
+  color: var(--second-primary-text-color);
 }
 
 .list-projects {
